@@ -1,6 +1,6 @@
 <?php
 // Created by Halsey Takang (skinofblackpikin)
-$name = "Halsey";
+
 require_once 'default.php'; 
 
 ?>

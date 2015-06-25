@@ -19,16 +19,17 @@ function createHeader(){
 		</div>
 		<div id='menu'>
                 <ul id='menu-list'>
-                    <li class='menu-list-item'><a href='#' accesskey='1' title=''>Home</a></li>
-                    <li class='icon icon-ok menu-list-item'><a href='#' accesskey='2' title=''>Tutorials</a></li>
-                    <li class='icon icon-ok menu-list-item'><a href='#' accesskey='3' title=''>Business</a></li>
-                    <li class='icon icon-ok menu-list-item'><a href='#' accesskey='4' title=''>Software</a></li>
-                    <li class='icon icon-ok menu-list-item'><a href='#' accesskey='8' title=''>Photos</a></li>
-                    <li class='icon icon-ok menu-list-item'><a href='#' accesskey='9' title=''>Music</a></li>
-                    <li class='icon icon-ok menu-list-item'><a href='#' accesskey='9' title=''>Novels</a></li>
-                    <li class='icon icon-ok menu-list-item'><a href='#' accesskey='5' title=''>Careers</a></li>
-                    <li class='icon icon-ok menu-list-item'><a href='#' accesskey='6' title=''>About us</a></li>
-                    <li class='icon icon-ok menu-list-item'><a href='#' accesskey='7' title=''>Contact us</a></li>
+                    <li class='menu-list-item'><a href='#' accesskey='0' title=''>Home</a></li>
+                    <li class='menu-list-item'><a href='#' accesskey='1' title=''>Tutorials</a></li>
+                    <li class='menu-list-item'><a href='#' accesskey='2' title=''>Lectures</a></li>
+                    <li class='menu-list-item'><a href='#' accesskey='3' title=''>Business</a></li>
+                    <li class='menu-list-item'><a href='#' accesskey='4' title=''>Software</a></li>
+                    <li class='menu-list-item'><a href='#' accesskey='5' title=''>Photos</a></li>
+                    <li class='menu-list-item'><a href='#' accesskey='6' title=''>Music</a></li>
+                    <li class='menu-list-item'><a href='#' accesskey='7' title=''>Novels</a></li>
+                    <li class='menu-list-item'><a href='#' accesskey='8' title=''>Careers</a></li>
+                    <li class='menu-list-item'><a href='#' accesskey='9' title=''>About us</a></li>
+                    <li class='menu-list-item'><a href='#' title=''>Contact us</a></li>
                 </ul>
 		</div>
 	</div>
