@@ -19,7 +19,7 @@ function createHeader(){
 		</div>
 		<div id='menu'>
                 <ul id='menu-list'>
-                    <li class='icon icon-ok current_page_item menu-list-item'><a href='#' accesskey='1' title=''>Home</a></li>
+                    <li class='menu-list-item'><a href='#' accesskey='1' title=''>Home</a></li>
                     <li class='icon icon-ok menu-list-item'><a href='#' accesskey='2' title=''>Tutorials</a></li>
                     <li class='icon icon-ok menu-list-item'><a href='#' accesskey='3' title=''>Business</a></li>
                     <li class='icon icon-ok menu-list-item'><a href='#' accesskey='4' title=''>Software</a></li>
@@ -39,7 +39,7 @@ function createHeader(){
 function createFooter(){
     echo "<div id='footer-wrapper' class='nav navbar-header navbar-fixed-bottom'>".
     "<div id='footer' class='container'>"
-    ."<p>&copy; 2015 Habetak systems Inc.</p>"
+    ."<p style='color:#ffffff; font-weight: bold;'>&copy; 2015 Habetak systems Inc.</p>"
     ."</div>".
     "</div>";
 }
