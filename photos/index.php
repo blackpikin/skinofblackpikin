@@ -17,7 +17,7 @@ $siteName = "SkinOfBlackpikin"
 
     </div>
     <div class="col-xs-12 col-sm-4">
-
+        <div class="pageheader">Photos</div>
     </div>
     <div class="col-xs-12 col-sm-4">
 

@@ -37,7 +37,6 @@
     margin-top: 3px;
     margin-bottom: 3px;
     padding: 2px;
-
 }
 
 .div_present_text{
@@ -82,4 +81,9 @@
     background-color: #35B3D6!important;
     color : white!important;
     border-color:  #5bc0de;
+}
+
+.pageheader{
+  margin-top: 10px;
+  font-size: 20pt;  color:  #35B3D6;
 }

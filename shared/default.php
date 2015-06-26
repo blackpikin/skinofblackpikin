@@ -38,11 +38,8 @@ function createHeader(){
 }
 
 function createFooter(){
-    echo "<div id='footer-wrapper' class='nav navbar-header navbar-fixed-bottom'>".
-    "<div id='footer' class='container'>"
-    ."<p style='color:#ffffff; font-weight: bold;'>&copy; 2015 Habetak systems Inc.</p>"
-    ."</div>".
-    "</div>";
+    echo "<div id='footer-wrapper' class='nav navbar-header navbar-fixed-bottom'><div id='footer' class='container'>
+    <p style='color:#ffffff; font-weight: bold;'>&copy; 2015 Habetak systems Inc.</p></div></div>";
 }
 
 
