@@ -1,7 +1,7 @@
 <?php
 // Created by Halsey Takang (skinofblackpikin)
 
-require_once '../shared/default.php';
+include '../shared/default.php';
 $siteName = "SkinOfBlackpikin"
 ?>
 <!DOCTYPE html>
