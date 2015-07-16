@@ -1,92 +1,41 @@
 <?php
-// Created by Halsey Takang (skinofblackpikin)
+/**
+ * Requests collector.
+ *
+ *  This file collects requests if:
+ *	- no mod_rewrite is available or .htaccess files are not supported
+ *  - requires App.baseUrl to be uncommented in app/Config/core.php
+ *	- app/webroot is not set as a document root.
+ *
+ * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
+ * Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
+ *
+ * Licensed under The MIT License
+ * For full copyright and license information, please see the LICENSE.txt
+ * Redistributions of files must retain the above copyright notice.
+ *
+ * @copyright     Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
+ * @link          http://cakephp.org CakePHP(tm) Project
+ * @since         CakePHP(tm) v 0.2.9
+ * @license       http://www.opensource.org/licenses/mit-license.php MIT License
+ */
 
-include '../shared/default.php';
-   $siteName = "SkinOfBlackpikin"
-?>
-<!DOCTYPE html>
-<html>
-    <head>
-        <title><?php echo $siteName ?> - Home</title>
-         <?php loadScripts()?>
-    </head>
-<body>     
-    <?php createHeader();?>
-    <div class="row">
-        <div class="col-xs-12 col-sm-4">
-            <div id="tutorials" class="div_present_text">
-                <div><?php echo "Tutorials" ?></div>
-                You can use either of these methods to specify the media for entire blocks of styles, and create
-                multiple media blocks within the same style block. However, it is generally easier to create
-                groups of media-specific styles in external files and use the link element to link each into your
-                document. This technique is outlined in the next section.
-                <input type="button"  class="btn_style_sobp" value="Read more..."/>
-            </div>
-            <div id="lectures" class="div_present_text">
-                <div><?php echo "Lectures" ?></div>
-                You can use either of these methods to specify the media for entire blocks of styles, and create
-                multiple media blocks within the same style block. However, it is generally easier to create
-                groups of media-specific styles in external files and use the link element to link each into your
-                document. This technique is outlined in the next section.
-                <input type="button" class="btn_style_sobp" value="Read more..."/>
-            </div>
-            <div id="photos" class="div_present_text">
-                <div><?php echo "Photos" ?></div>
-                You can use either of these methods to specify the media for entire blocks of styles, and create
-                multiple media blocks within the same style block. However, it is generally easier to create
-                groups of media-specific styles in external files and use the link element to link each into your
-                document. This technique is outlined in the next section.
-                <input type="button" class="btn_style_sobp" value="Read more..."/>
-            </div>
-        </div>
-        <div class="col-xs-12 col-sm-4">
-            <div id="business" class="div_present_text">
-                <div><?php echo "Business" ?></div>
-                You can use either of these methods to specify the media for entire blocks of styles, and create
-                multiple media blocks within the same style block. However, it is generally easier to create
-                groups of media-specific styles in external files and use the link element to link each into your
-                document. This technique is outlined in the next section.
-                <input type="button" class="btn_style_sobp" value="Read more..."/>
-            </div>
-            <div id="software" class="div_present_text">
-                <div><?php echo "Software" ?></div>
-                You can use either of these methods to specify the media for entire blocks of styles, and create
-                multiple media blocks within the same style block. However, it is generally easier to create
-                groups of media-specific styles in external files and use the link element to link each into your
-                document. This technique is outlined in the next section.
-                <input type="button" class="btn_style_sobp" value="Read more..."/>
-            </div>
-            <div id="music" class="div_present_text">
-                <div><?php echo "Music" ?></div>
-                You can use either of these methods to specify the media for entire blocks of styles, and create
-                multiple media blocks within the same style block. However, it is generally easier to create
-                groups of media-specific styles in external files and use the link element to link each into your
-                document. This technique is outlined in the next section.
-                <input type="button" class="btn_style_sobp" value="Read more..."/>
-            </div>
-        </div>
-        <div class="col-xs-12 col-sm-4">
-            <div id="novels" class="div_present_text">
-                <div><?php echo "Novels" ?></div>
-                You can use either of these methods to specify the media for entire blocks of styles, and create
-                multiple media blocks within the same style block. However, it is generally easier to create
-                groups of media-specific styles in external files and use the link element to link each into your
-                document. This technique is outlined in the next section.
-                <input type="button" class="btn_style_sobp" value="Read more..."/>
-            </div>
-            <div id="careers" class="div_present_text">
-                <div><?php echo "Careers" ?></div>
-                You can use either of these methods to specify the media for entire blocks of styles, and create
-                multiple media blocks within the same style block. However, it is generally easier to create
-                groups of media-specific styles in external files and use the link element to link each into your
-                document. This technique is outlined in the next section.
-                <input type="button" class="btn_style_sobp" value="Read more..."/>
-            </div>
-        </div>
-    </div>
-    
-    <?php createFooter(); ?>
-</body>
-</html>
+/**
+ *  Get CakePHP's root directory
+ */
+define('APP_DIR', 'app');
+define('DS', DIRECTORY_SEPARATOR);
+define('ROOT', dirname(__FILE__));
+define('WEBROOT_DIR', 'webroot');
+define('WWW_ROOT', ROOT . DS . APP_DIR . DS . WEBROOT_DIR . DS);
 
+/**
+ * This only needs to be changed if the "cake" directory is located
+ * outside of the distributed structure.
+ * Full path to the directory containing "cake". Do not add trailing directory separator
+ */
+if (!defined('CAKE_CORE_INCLUDE_PATH')) {
+	define('CAKE_CORE_INCLUDE_PATH', ROOT . DS . 'lib');
+}
 
+require APP_DIR . DS . WEBROOT_DIR . DS . 'index.php';
